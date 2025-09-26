@@ -8,7 +8,12 @@ e. git push
 f. git merge
 g. git rebase
 h. git fetch
+<<<<<<< HEAD
 i
+=======
+i.
+# Testing git status colors
+>>>>>>> 6ba440a (Update git_cheatsheet.txt)
 ---
 
 b. Descriptions and Arguments
