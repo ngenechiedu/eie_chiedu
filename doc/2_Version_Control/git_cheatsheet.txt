@@ -1,0 +1,70 @@
+a. Git Commands
+
+a. git commit
+b. git branch
+c. git checkout
+d. git pull
+e. git push
+f. git merge
+g. git rebase
+h. git fetch
+
+---
+
+b. Descriptions and Arguments
+
+1. git commit
+- Description: Records changes to the local repository with a commit message.
+- Common Arguments:
+  - -m "message": Adds a commit message.
+  - --amend: Modifies the last commit.
+- Function Change?: Yes. Without -m, it opens the editor. With --amend, it edits the previous commit.
+
+2. git branch
+- Description: Creates, lists, or deletes branches.
+- Common Arguments:
+  - <branch-name>: Creates a new branch.
+  - -d <branch-name>: Deletes a branch.
+  - -a: Lists all branches (local and remote).
+- Function Change?: Yes. No args = list, 1 arg = create, -d = delete.
+
+3. git checkout
+- Description: Switches branches or restores files.
+- Common Arguments:
+  - <branch-name>: Switches to that branch.
+  - -b <new-branch>: Creates and switches to a new branch.
+  - <file>: Restores a file from the index.
+- Function Change?: Yes. Used for both branch switching and file restoration.
+
+4. git pull
+- Description: Fetches and merges changes from a remote repository into your current branch.
+- Common Arguments:
+  - origin <branch>: Pulls from a specific remote branch.
+- Function Change?: Yes. Defaults to upstream branch if no args are given.
+
+5. git push
+- Description: Uploads local commits to a remote repository.
+- Common Arguments:
+  - origin <branch>: Pushes a specific branch.
+  - --force: Forces the push, overwriting history.
+- Function Change?: Yes. No args = current branch; --force changes behavior.
+
+6. git merge
+- Description: Merges another branch into the current branch.
+- Common Arguments:
+  - <branch-name>: The branch you want to merge into the current one.
+- Function Change?: Not significantly; always merges the provided branch.
+
+7. git rebase
+- Description: Moves or reapplies commits onto a different base commit.
+- Common Arguments:
+  - <branch>: Rebase onto another branch.
+  - -i: Interactive rebase for editing commits.
+- Function Change?: Yes. -i enables editing, normal rebasing is automatic.
+
+8. git fetch
+- Description: Retrieves changes from a remote repository but doesn’t merge them.
+- Common Arguments:
+  - origin: Fetches from the default remote.
+  - origin <branch>: Fetches a specific branch.
+- Function Change?: Yes. With or without branch name changes the scope.
