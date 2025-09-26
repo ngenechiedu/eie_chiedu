@@ -8,8 +8,7 @@ e. git push
 f. git merge
 g. git rebase
 h. git fetch
-
----
+# Testing git status colors
 
 b. Descriptions and Arguments
 
@@ -68,3 +67,36 @@ b. Descriptions and Arguments
   - origin: Fetches from the default remote.
   - origin <branch>: Fetches a specific branch.
 - Function Change?: Yes. With or without branch name changes the scope.
+a. git add
+   - Moves changes from the working directory to the staging area.
+   - Staging means you are preparing the changes to be committed.
+   - Examples:
+       git add file.txt    # add one file
+       git add .           # add all changes in current directory
+       git add -A          # add all changes including deletions
+
+b. git status
+   - Shows the current state of the repository.
+   - Tells you:
+       * which branch you are on
+       * which files are untracked (red)
+       * which files are staged for commit (green)
+       * if your branch is ahead/behind the remote
+   - Safe to run anytime.
+
+c. git log
+   - Displays the commit history of the current branch.
+   - Shows commit IDs, authors, dates, and messages.
+   - Useful options:
+       git log --oneline                # compact view
+       git log --graph --oneline --all  # visualize branches
+       git log -p                       # show changes (diffs)
+
+d. git push -u <remote> <branch>
+   - Pushes local commits to a remote branch.
+   - The -u (or --set-upstream) flag links your local branch to the remote branch.
+   - After setting upstream once, you can simply use `git push` and `git pull` without specifying branch/remote again.
+   - Example:
+       git push -u origin lesson2
+       # Sets local branch 'lesson2' to track 'origin/lesson2'
+
